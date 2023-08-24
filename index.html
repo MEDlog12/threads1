@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thread Downloader</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Thread Downloader</h1>
+    <form action="/download" method="POST">
+        <label for="thread_url">Thread URL:</label>
+        <input type="text" name="thread_url" id="thread_url" required>
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
